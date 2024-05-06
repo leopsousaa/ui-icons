@@ -10,4 +10,5 @@ export default defineConfig({
   clean: true,
   dts: true,
   esbuildPlugins: [nodeExternalsPlugin()],
+  tsconfig: "tsconfig.build.json",
 });

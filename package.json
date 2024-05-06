@@ -1,13 +1,14 @@
 {
   "name": "@leopsousaa/ui-icons",
   "private": false,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "UNLICENSED",
   "scripts": {
     "clear": "rm -fr ./temp",
     "icons": "svj -i ./assets -d ./temp -r",
     "compile": "tsup && npm run clear",
-    "bundle": "npm run icons && npm run compile"
+    "bundle": "npm run icons && npm run compile",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
