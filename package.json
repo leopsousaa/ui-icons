@@ -1,13 +1,14 @@
 {
   "name": "@leopsousaa/ui-icons",
   "private": false,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "UNLICENSED",
   "scripts": {
     "clear": "rm -fr ./temp",
     "icons": "svj -i ./assets -d ./temp -r",
     "compile": "tsup && npm run clear",
     "bundle": "npm run icons && npm run compile",
+    "publish": "npm publish",
     "prepare": "husky"
   },
   "devDependencies": {
@@ -18,6 +19,7 @@
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
+    "husky": "^9.0.11",
     "path": "^0.12.7",
     "svj": "^2.2.3",
     "tsup": "^8.0.2",
