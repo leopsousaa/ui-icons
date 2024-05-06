@@ -1,0 +1,24 @@
+{
+  "name": "ui-icons",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "icons": "svj -i ./assets -d ./temp -r",
+    "clear": "rm -fr ./temp",
+    "compile": "tsup && npm run clear",
+    "bundle": "npm run icons && npm run compile"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "esbuild-node-externals": "^1.13.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "path": "^0.12.7",
+    "svj": "^2.2.3",
+    "tsup": "^8.0.2",
+    "typescript": "^5.2.2"
+  }
+}
