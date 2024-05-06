@@ -3,8 +3,8 @@
   "private": true,
   "version": "0.0.1",
   "scripts": {
-    "icons": "svj -i ./assets -d ./temp -r",
     "clear": "rm -fr ./temp",
+    "icons": "svj -i ./assets -d ./temp -r",
     "compile": "tsup && npm run clear",
     "bundle": "npm run icons && npm run compile"
   },

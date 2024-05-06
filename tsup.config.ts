@@ -1,7 +1,7 @@
 import { nodeExternalsPlugin } from "esbuild-node-externals";
 import { defineConfig } from "tsup";
 
-defineConfig({
+export default defineConfig({
   entry: ["temp/index.ts"],
   platform: "node",
   format: ["cjs", "esm"],
